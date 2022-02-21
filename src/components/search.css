@@ -1,0 +1,14 @@
+#maindiv{
+
+    display: grid;
+    grid-template-columns: auto;
+
+}
+.buttons{
+    display: flex;
+    justify-content: flex-start;
+}
+#detailed-result{
+    text-align: left;
+    margin-left: 5%;
+}

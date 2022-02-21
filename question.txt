@@ -1,0 +1,48 @@
+Due Feb 21 by 5pm Points 10 Submitting a website url or a file upload Available Feb 21 at 2pm - Feb 21 at 5pm about 3 hours
+https://fast-reef-22226.herokuapp.com/data (Links to an external site.)
+
+Create a search engine like google in react
+Application will use react-router and redux to handle states
+The main page  `/`  shows only logo and one input box
+eg: https://imgur.com/a/TFIMU3a (Links to an external site.)
+the classname of this inputbox must be `search-box`
+User should be able to get search result after 'pressing ENTER'
+the search page looks like this:
+EG: https://imgur.com/a/XHZaPnV (Links to an external site.)
+the URL of the page looks like this: `/search?q=YourQuery` 
+this page is divided into two parts: Navigation and search results
+The navbar (div id=navbar) will have any decoration you want. it must have one input box and search button
+the button classname must be `search`
+Input box should search the query on click of search button as well as by pressing enter into it.
+Search page will have two parts: sorting buttons and search body itself
+When user changes sort order sort them IN MEMORY, in redux. DO NOT MAKE NETWORK REQUEST
+Use this deployed URL to fetch data 
+we need these sorting buttons:
+2 buttons for sorting title alphabetically ASC and DESC. ID :  sort-alphabetically and sort-alphabetically-desc
+2 buttons for sorting by date ASC and DESC: ID: sort-by-date and sort-by-date-desc
+2 for sort by quality ASC and DESC: ID: sort-by-quality sort-by-quality-desc 
+1 for filtering out explicit content ID: filter-explicit
+sorting buttons behave as expected. filter explicit content button will hide all explicit: true links.
+Show your all results list in a div with id = search-result 
+every result will have it's own card with class = result 
+every result card shows url, title, author (company's parent basically) description, creation date, and explicit
+eg: https://imgur.com/a/l4ehWzx (Links to an external site.) 
+Any other visual changes you want to do are acceptable (like shorted desc)
+All these filtering and sorting will happen in redux, all network requests are trapped by cypress so any request with _sort, _limit, _order etc will fail.
+When we click on any results `title`, user should be taken to `/page/:id`. this id will be same as results id from json-server
+show all information of search on this page.
+div id="detailed-result" will hold entire results 
+title inside div class - title
+description inside div class: desc
+Company name inside div class: author
+creation date inside div class: creation-date
+explicit inside div class: explicit
+quality inside: div class: quality
+UI should look clean. Keep code clean
+ 
+
+Uploading Instructions:
+Upload .zip of your source code (DO NOT UPLOAD NODE MODULES)
+Upload github url of your repo in the comment of same file.
+in the 'website' section add only deployed link. all routes should work
+ 

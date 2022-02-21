@@ -1,0 +1,17 @@
+
+.home > img {
+    width: 60%;
+    height:200px;
+    margin-left: 10%;
+}
+.home{
+    display: grid;
+    margin: auto;
+   justify-content: center;
+
+}
+.search-box{
+    width: 80%;
+    height: 30px;
+    border-radius: 15px;
+}

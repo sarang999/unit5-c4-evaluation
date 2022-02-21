@@ -1,0 +1,13 @@
+.img{
+    width: 150px;
+
+}
+#navbar{
+    display: flex;
+    justify-content:flex-start;
+}
+#navbar>input{
+    margin-left: 20px;
+    margin-right: 5px;
+    width: 50%;
+}
